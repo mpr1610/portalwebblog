@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+html,body{
+    height: 100%;
+    background: rgb(225, 225, 225);
+}
+
+
+
+/*página de login*/
+.box-login{
+    max-width: 600px;
+    width: 95%;
+    padding: 40px 2%;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 5px #8888;
+}
+
+.box-login h2{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: black;
+    font-weight: normal;
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.box-login input[type=submit]{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    background-color: #086e54;
+    margin-top: 8px;
+}
+/*fim da pagina de login*/
+
+.erro-box{
+    text-align: center;
+    color: white;
+    padding: 8px 2%;
+    width: 100%;
+}
+
+
+/*Página de acesso*/
+
+.clear{
+    clear: both;
+}
+
+.center{
+padding: 0 2%;
+margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.menu-wraper{
+    width: 300px;
+}
+
+div.menu{
+    overflow-x: hidden;
+    overflow-y: F;
+    height: 100%;
+    background: #607d8b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    width: 300px;
+}
+
+header{
+    position: relative;
+    left: 300px;
+    padding: 10px 0;
+    width: calc(100% - 300px);
+    background-color: #78909c;
+}
+
+
+.loggout{
+	float: right;
+}
+
+.loggout a{
+	padding: 0 20px;
+	
+	top: 4px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+.loggout a > span{
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+
+.menu-btn{
+    float: left;
+    color: white;
+    font-size:23px;
+    cursor: pointer;
+}
+
+
+div.box-usuario{
+    text-align: center;
+
+}
+
+.avatar-usuario{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid 3px black;
+    
+}
+
+.avatar-usuario i{
+    font-size: 50px;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.imagem-usuario img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    
+}
+
+
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-usuario p{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*conteudo principal do painel*/
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 49%;
+
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.content{
+    width:calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    
+}
+
+.box-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+table{
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+    font-weight: 300;
+}
+
+table tr:nth-of-type(1){
+    background-color: #0091ea;
+    color: white;
+    font-weight: bold;
+    
+}
+
+table tr{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
+a.btn.order{background: #0091ea;}
+
+table td{
+    padding: 8px;
+}
+
+table a.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 6px;
+    
+    color: white;
+    font-size: 13px;
+}
+
+.wraper-table{
+    overflow-x: auto;
+}
+
+a.btn.edit{
+    background: #F4B03E;
+}
+a.btn.delete{
+    background: #e05c4E;
+}
+
+.paginacao{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.paginacao a{
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+
+    font-weight: bolder;
+    
+}
+.paginacao a.page-selected{
+    color: white;
+    background-color: #0091ea;
+}
+
+
+
+
+.itens-menu{
+    margin-top: 30px;
+}
+
+.itens-menu h2{
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background: #2f3042;
+    color: white;
+    padding: 8px;
+}
+
+.itens-menu a{
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #2f3042;
+    font-weight: 300;
+}
+
+
+.box-metricas{
+    width: 100%;
+    display: inline-block;
+    
+}
+
+
+
+.box-metricas-single1{
+    width: 33%;
+    float: left;
+    padding: 8px;
+    padding-top: 8px;
+    color: white;
+    background-color:#F4B03E;;
+    margin-top: 8px;
+    border: 5px solid white;
+}
+.box-metricas-single2{
+    width: 33%;
+    float: left;
+    padding: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    color: white;
+    background-color: #e05c4E;
+    border: 5px solid white;
+    
+}
+
+.box-metricas-single3{
+    width: 33%;
+    float: left;
+    padding: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    color: white;
+    background-color:green;
+    border: 5px solid white;
+}
+
+
+/*Tabela responsiva*/
+.table-responsive{
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-of-type(1){
+    font-weight: bold;
+    color:white;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(6, 99, 99);
+    
+}
+
+.col{
+    float: left;
+    width: 50%;
+    max-width: 1280px;
+    margin: 0 auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.box-content form{
+    margin: 30px 0;
+}
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+
+.box-content form textarea{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: vertical;
+
+}
+
+.box-content form input[type=file]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+}
+.box-content form input[type=text]{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-top: 8px;
+    
+}
+
+.box-content form input[type=submit]{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    background-color: #086e54;
+    margin-top: 8px;
+    
+}
+
+.box-alert{
+	width: 100%;
+	padding:8px 0;
+	text-align: center;
+}
+
+.sucesso{
+	background: #a5d6a7;
+	color: white;
+}
+
+.erro{
+	background: #F75353;
+	color: white;
+}
+
+
+.menu-active{
+    background: #344247;
+    animation: alternate 2s;
+
+}
+
+.menu-active::before{ 
+    content: '> ';
+}
+
+.box-content form select{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.box-content form input[type=password]{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+
+
+.form-group-login label{
+    font-size: 14px;
+    padding-right: 6px;
+    font-weight: 300;
+    color: black;
+}
+
+form .form-group-login:nth-of-type(2){
+    position: relative;
+    top:10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .menu{
+        display: none;
+        padding: 0;
+        width: 0;
+    }
+
+    header{
+        left: 0;
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        left: 0;
+    }
+     
+    .box-metricas-single1{
+        width: 100%;
+        padding: 8px;
+        padding-top: 8px;
+        color: white;
+        background-color: rgb(255, 217, 0);
+        margin-top: 8px;
+        border: 5px solid white;
+    }
+    .box-metricas-single2{
+        width: 100%;
+        padding: 8px;
+        padding-top: 8px;
+        margin-top: 8px;
+        color: white;
+        background-color: red;
+        border: 5px solid white;
+        
+    }
+    
+    .box-metricas-single3{
+        width: 100%;
+        padding: 8px;
+      
+        padding-top: 8px;
+        margin-top: 8px;
+        color: white;
+        background-color:green;
+        border: 5px solid white;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .w50{
+    width: 100%;
+}
+    .box-metricas-single1,.box-metricas-single2.box-metricas-single3{
+        width: 100%;
+       
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .menu-wraper{
+        width: 200px;
+    }
+}
